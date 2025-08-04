@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Always You</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1519068599680-f3a3b1b41d3e') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      animation: fadeIn 3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 800px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ffdf91;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      color: #f8f8f8;
+    }
+
+    .hug-button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1em;
+      border: none;
+      background-color: #ff8ba7;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hug-button:hover {
+      background-color: #ff6f91;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Optional background music -->
+  <!-- <audio autoplay loop>
+    <source src="your-music.mp3" type="audio/mpeg">
+  </audio> -->
+
+  <div class="container">
+    <h1>Always You</h1>
+    <p>
+      I may never be able to tell you this, but even on the days we fight, even when we don't understand each other, I still choose you.<br><br>
+      Not because it's easy, but because you're worth it.<br><br>
+      Love isn't about being perfect. It's about holding on when everything feels like it's falling apart.<br><br>
+      It's about choosing the same person again and again, even through silence, confusion, and pain.<br><br>
+      And no matter how hard it gets, I will always choose you.
+    </p>
+    <button class="hug-button" onclick="sendHug()">🤗 Send a Hug</button>
+  </div>
+
+  <script>
+    function sendHug() {
+      alert("🤗 A warm hug has been sent to your heart! 💖");
+    }
+  </script>
+
+</body>
+</html>
